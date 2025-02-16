@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+  
+<!-- Mirrored from hakolab.site/wedding/index.html?p=Bpk&n=Haus+Coding by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Feb 2025 06:35:08 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wedding Ragu ❤ Shalini</title>
+    <!-- favicon -->
+    <link rel="icon" href="assets/img/ragu1.jpg">
+    <!-- bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&amp;family=Work+Sans&amp;display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link href="../../unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Lightbox2 -->
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fontawesome6 -->
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body class="overflow-hidden">
+    <!-- music -->
+    <audio src="assets/audio/Solli Tharava Solli Tharava BGM.mp3" loop class="music"></audio>
+    <!-- sfx door -->
+    <audio src="assets/audio/door.mp3" class="sound-door"></audio>
+
+    <!-- door section -->
+    <div id="door-section" class="open" onclick="mulai()">
+      <h1 class="heading-door left huruf-sambung">Ragu</h1>
+      <h1 class="heading-door right huruf-sambung">Shalini</h1>
+      <div class="doors">
+        <div class="door left">
+          <img src="assets/img/door-left.png" alt="left door">
+        </div>
+        <div class="door right">
+          <img src="assets/img/door-right.png" alt="right door">
+        </div>
+      </div>
+    </div>
+
+    <!-- content section -->
+    <div id="content-section">
+      <!-- navbar -->
+      <ul class="nav">
+        <span class="nav-music"></span>
+        <li>
+          <a href="#acara-section">
+            <i class="fas fa-fw fa-calendar-day"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#lokasi-section">
+            <i class="fas fa-fw fa-location-dot"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#love-story-section">
+            <i class="fas fa-fw fa-heart"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-item-music rotate" id="music-button" onclick="toggleMusic(event)">
+            <i class="fas fa-fw fa-compact-disc"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#gallery-section">
+            <i class="fas fa-fw fa-image"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#gift-section">
+            <i class="fas fa-fw fa-gift"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#rsvp-section">
+            <i class="fas fa-fw fa-check-to-slot"></i>
+          </a>
+        </li>
+      </ul>
+
+      <!-- hero section -->
+      <section id="hero-section" class="d-flex align-items-center">
+        <img src="assets/img/sparkle.gif" alt="sparkle" class="sparkle">
+        <div class="container text-center">
+          <h4 class="my-2 text-white">Wedding Invitation</h4>
+          <h1 class="my-2 text-white huruf-sambung">Ragu & Shalini</h1>
+          <h4 class="my-2 text-white">Will be getting married on</h4>
+          <h4 class="my-2 text-white fw-bold">Sunday, 8 June 2025</h4>
+          <div class="row my-3 d-flex justify-content-center" id="countdown-wedding">
+            <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-light"><h5>0</h5> Days</div></div>
+            <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-light"><h5>0</h5> Hours</div></div>
+            <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-light"><h5>0</h5> Minutes</div></div>
+            <div class="col-lg-1 col-3"><div class="text-center p-2 rounded text-light"><h5>0</h5> Seconds</div></div>
+          </div>
+
+         
+          <a href="#pembuka-section" class="rounded-pill btn btn-lg btn-get-started py-3"><i class="fas fa-fw fa-envelope-open-text"></i>Open Invitation</a>
+        </div>
+      </section>
+
+      <!-- pembuka section -->
+      <section id="pembuka-section" class="pembuka-section section-bg py-5">
+        <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="section-title text-center">
+                <h1 class="text-pink huruf-sambung fw-bold">Greetings</h1>
+                <!-- <h3>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h3> -->
+                <p>A successful marriage requires falling in love many times, always with the same person.</p>
+                <p>Mignon McLaughlin</p>
+              </div>
+
+              <div class="row my-4 justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                  <img src="assets/img/wedding1.gif" alt="wedding" class="img-fluid rounded-pill" width="250" height="250">
+                </div>
+              </div>
+
+              <div class="row my-3 justify-content-between">
+                <div class="col rounded" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                  <div class="p-2 pt-3 text-center">
+                    <h1 class="text-center huruf-sambung">Ragupathi</h1>
+                    <p>Kallakurichi</p>
+                   
+                  </div>
+                </div>
+                <div class="col-sm-1 my-auto" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                  <h1 class="text-center huruf-sambung">&</h1>
+                </div>
+                <div class="col rounded" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                  <div class="p-2 pt-3 text-center">
+                    <h1 class="text-center huruf-sambung">Shalini</h1>
+                    <p>Chennai</p>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Acara Section -->
+      <section id="acara-section" class="acara-section py-5">
+        <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="section-title">
+                <h1 class="text-pink huruf-sambung fw-bold">Wedding Ceremony</h1>
+                <p>It is an honor and a joy for us if you, dear Sir/Madam/Brother/Sister, would kindly attend and give your blessings. We sincerely thank you.</p>
+              </div>
+              <div class="row justify-content-between px-3 text-center">
+                <div class="col-lg-6 border my-2 rounded p-3 card-acara" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                  <h4>Wedding Ceremony</h4>
+                  <hr>
+                  <p><i class="fas fa-fw fa-calendar-day"></i> Sunday, 8 June 2025</p>
+                  <p><i class="fas fa-fw fa-clock"></i> 10:00 AM - 12:00 AM</p>
+                  <p><i class="fas fa-fw fa-location-dot"></i> Sumangali Marriage Hall,Alathur, Tamil Nadu 606208</p>
+                </div>
+
+                <div class="col-lg-6 border my-2 rounded p-3 card-acara" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                  <h4>Reception</h4>
+                  <hr>
+                  <p><i class="fas fa-fw fa-calendar-day"></i> Sunday, 15 June 2025</p>
+                  <p><i class="fas fa-fw fa-clock"></i> 6:00 PM - 8:00 PM</p>
+                  <p><i class="fas fa-fw fa-location-dot"></i> Thiruvalluvar Marriage Hall, Vimlapuram, Chinnasekkadu, Manali, Chennai, Tamil Nadu 600051</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lokasi Section -->
+      <section id="lokasi-section" class="lokasi-section py-5 section-bg">
+        <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="section-title">
+                <h1 class="text-pink huruf-sambung fw-bold">Wedding Ceremony & Reception Location</h1>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                  <p>Wedding Location</p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3905.3839770578206!2d78.94613389999999!3d11.8083582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bab6175e3f4399f%3A0x707f6ca3bb4d4814!2sSumangali%20Marriage%20Hall!5e0!3m2!1sen!2sin!4v1739697092635!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+              <br/>
+              <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                  <p>Reception Location</p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.988485344068!2d80.2607965!3d13.1631259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52654f3950112b%3A0x186e97cf02b3af17!2sThiruvalluvar%20Marriage%20Hall!5e0!3m2!1sen!2sin!4v1739697179291!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Love Story Section -->
+      <!-- <section id="love-story-section" class="love-story-section py-5">
+        <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+          <div class="section-title">
+            <h1 class="text-pink huruf-sambung fw-bold">Love Story</h1>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg">
+              <ul class="timeline">
+                <li data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                  <div class="timeline-badge" style="background-image:url('assets/img/timeline/timeline-1.jpg');"></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3 class="timeline-title">Pertemuan Pertama Nobita dan Shizuka</h3>
+                      <span class="timeline-date">15 Mei 1990</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Di sebuah taman bermain kecil di kota kecil mereka, Nobita yang pemalu dan Shizuka yang ramah pertama kali bertemu. Meskipun awalnya mereka tidak terlalu akrab, ada kilatan kecocokan yang tak terduga di antara mereka.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="timeline-inverted" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                  <div class="timeline-badge" style="background-image:url('assets/img/timeline/timeline-2.jpg');"></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3 class="timeline-title">Pertemanan Tumbuh</h3>
+                      <span class="timeline-date">1990 - 1995</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Seiring berjalannya waktu, Nobita dan Shizuka menjadi teman yang tidak dapat dipisahkan. Mereka sering bermain bersama dan saling membantu satu sama lain dalam kesulitan. Selama masa-masa sekolah dasar dan menengah, persahabatan mereka semakin berkembang.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                  <div class="timeline-badge" style="background-image:url('assets/img/timeline/timeline-3.jpg');"></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3 class="timeline-title">Keceriaan dan Cobaan</h3>
+                      <span class="timeline-date">1995 - 2000</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Ketika mereka memasuki masa remaja, perasaan yang lebih dalam mulai tumbuh di antara Nobita dan Shizuka. Mereka menghadapi berbagai cobaan bersama, namun cinta mereka tetap kuat. Keberanian Nobita dan kebijaksanaan Shizuka membuat mereka semakin erat satu sama lain.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="timeline-inverted" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                  <div class="timeline-badge" style="background-image:url('assets/img/timeline/timeline-4.jpg');"></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3 class="timeline-title">Pengakuan Perasaan</h3>
+                      <span class="timeline-date">14 Februari 2001</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Pada Hari Valentine, Nobita akhirnya meneguhkan perasaannya pada Shizuka. Dengan hati berdebar, ia memberikan hadiah spesial kepada Shizuka dan mengungkapkan perasaan cintanya. Shizuka tersenyum dan menjawab bahwa perasaannya pun sama.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                  <div class="timeline-badge" style="background-image:url('assets/img/timeline/timeline-5.jpg');"></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3 class="timeline-title">Perjalanan Bersama</h3>
+                      <span class="timeline-date">2001 - 2010</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Setelah mengakui perasaan mereka, Nobita dan Shizuka menjalani perjalanan panjang bersama. Mereka mengatasi berbagai rintangan bersama dan saling mendukung dalam setiap langkah hidup masing-masing. Cinta mereka semakin dalam seiring berjalannya waktu.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="timeline-inverted" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                  <div class="timeline-badge" style="background-image:url('assets/img/timeline/timeline-6.jpg');"></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3 class="timeline-title">Lamaran</h3>
+                      <span class="timeline-date">28 Desember 2010</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Nobita, dengan hati penuh keberanian, melamar Shizuka di tempat favorit mereka, taman kecil di mana mereka pertama kali bertemu. Dengan sukses, Shizuka menerima lamaran tersebut dengan penuh kebahagiaan.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                  <div class="timeline-badge" style="background-image:url('assets/img/timeline/timeline-7.jpg');"></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3 class="timeline-title">Pernikahan Bahagia</h3>
+                      <span class="timeline-date">5 Oktober 2024</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p>Pada tanggal yang dipilih dengan cermat, Nobita dan Shizuka mengikat janji suci mereka dalam sebuah pernikahan yang sederhana dan penuh cinta. Mereka Berjanji untuk saling mendukung dalam suka dan duka sepanjang hidup mereka.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Gallery Section -->
+      <section id="gallery-section" class="gallery-section py-5 section-bg">
+        <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+          <div class="section-title">
+            <h1 class="huruf-sambung text-pink fw-bold">Gallery</h1>
+          </div>
+          <div class="row" data-masonry='{"percentPosition": true }'>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a href="assets/img/gallery/1.jpg" data-lightbox="nobitaShizuka" class="text-decoration-none">
+                <img src="assets/img/gallery/first.jpg" alt="Nobita & Shizuka" class="card-img border-pink">
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a href="assets/img/gallery/2.jpg" data-lightbox="nobitaShizuka" class="text-decoration-none">
+                <img src="assets/img/gallery/2.jpg" alt="Nobita & Shizuka" class="card-img border-pink">
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a href="assets/img/gallery/3.jpg" data-lightbox="nobitaShizuka" class="text-decoration-none">
+                <img src="assets/img/gallery/3.jpg" alt="Nobita & Shizuka" class="card-img border-pink">
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a href="assets/img/gallery/4.jpg" data-lightbox="nobitaShizuka" class="text-decoration-none">
+                <img src="assets/img/gallery/4.jpg" alt="Nobita & Shizuka" class="card-img border-pink">
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a href="assets/img/gallery/5.jpg" data-lightbox="nobitaShizuka" class="text-decoration-none">
+                <img src="assets/img/gallery/5.jpg" alt="Nobita & Shizuka" class="card-img border-pink">
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a href="assets/img/gallery/6.jpg" data-lightbox="nobitaShizuka" class="text-decoration-none">
+                <img src="assets/img/gallery/6.jpg" alt="Nobita & Shizuka" class="card-img border-pink">
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a href="assets/img/gallery/7.jpg" data-lightbox="nobitaShizuka" class="text-decoration-none">
+                <img src="assets/img/gallery/7.jpg" alt="Nobita & Shizuka" class="card-img border-pink">
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a href="assets/img/gallery/8.jpg" data-lightbox="nobitaShizuka" class="text-decoration-none">
+                <img src="assets/img/gallery/8.jpg" alt="Nobita & Shizuka" class="card-img border-pink">
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a href="assets/img/gallery/9.jpg" data-lightbox="nobitaShizuka" class="text-decoration-none">
+                <img src="assets/img/gallery/9.jpg" alt="Nobita & Shizuka" class="card-img border-pink">
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a href="assets/img/gallery/10.jpg" data-lightbox="nobitaShizuka" class="text-decoration-none">
+                <img src="assets/img/gallery/10.jpg" alt="Nobita & Shizuka" class="card-img border-pink">
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a href="assets/img/gallery/11.jpg" data-lightbox="nobitaShizuka" class="text-decoration-none">
+                <img src="assets/img/gallery/11.jpg" alt="Nobita & Shizuka" class="card-img border-pink">
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a href="assets/img/gallery/12.jpg" data-lightbox="nobitaShizuka" class="text-decoration-none">
+                <img src="assets/img/gallery/12.jpg" alt="Nobita & Shizuka" class="card-img border-pink">
+              </a>
+            </div>
+            <!-- <div class="col-sm-6 col-lg-4 mb-4">
+              <a href="assets/img/gallery/13.jpg" data-lightbox="nobitaShizuka" class="text-decoration-none">
+                <img src="assets/img/gallery/13.jpg" alt="Nobita & Shizuka" class="card-img border-pink">
+              </a>
+            </div> -->
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a href="assets/img/gallery/14.jpg" data-lightbox="nobitaShizuka" class="text-decoration-none">
+                <img src="assets/img/gallery/14.jpg" alt="Nobita & Shizuka" class="card-img border-pink">
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a href="assets/img/gallery/15.jpg" data-lightbox="nobitaShizuka" class="text-decoration-none">
+                <img src="assets/img/gallery/15.jpg" alt="Nobita & Shizuka" class="card-img border-pink">
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <a href="assets/img/gallery/16.jpg" data-lightbox="nobitaShizuka" class="text-decoration-none">
+                <img src="assets/img/gallery/17.jpg" alt="Nobita & Shizuka" class="card-img border-pink">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Penutup Section -->
+      <section id="penutup-section" class="penutup-section py-5">
+        <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="section-title text-center">
+                
+                <h5 class="my-3">WITH JOYFUL HEARTS</h5>
+                <h1 class="huruf-sambung">Ragu & Shalini</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer id="footer" class="mb-5 pb-5">
+        <div class="container py-5 text-center position-relative">
+          <div class="row">
+            <div class="col-12 my-3">
+              <a href="https://www.youtube.com/@codetolead" target="_blank" class="text-decoration-none text-pink fw-bold">&copy; 2025. Made with ❤️ by Code to Lead</a>
+            </div>
+            <div class="col-12 my-3">
+              <a href="#" class="text-pink"><i class="fas fa-fw fa-arrow-up"></i> Back to top</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    
+    
+
+    <!-- jquery3 -->
+    <script src="../../code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- bootstrap5 -->
+    <script src="../../cdn.jsdelivr.net/npm/bootstrap%405.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="../../unpkg.com/aos%402.3.1/dist/aos.js"></script>
+    <!-- lightbox2 -->
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- sweetalert2 -->
+    <script src="../../cdn.jsdelivr.net/npm/sweetalert2%4011.10.3/dist/sweetalert2.all.min.js"></script>
+    <!-- masonry -->
+    <script src="../../cdn.jsdelivr.net/npm/masonry-layout%404.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <!-- js -->
+    <script src="assets/js/script.js"></script>
+    <script id="dsq-count-scr" src="../../wedding-nobita-dan-shizuka.disqus.com/count.js" async></script>
+  </body>
+
+<!-- Mirrored from hakolab.site/wedding/index.html?p=Bpk&n=Haus+Coding by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Feb 2025 06:35:43 GMT -->
+</html>
